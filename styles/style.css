@@ -3,6 +3,7 @@
 :root {
   --primaryTextColor: #232e35;
   --secondaryTextColor: #656d72;
+  --thirdTextColor: #6e777d;
 
   --borderColor: #f1f1f1;
   --lineColor: #d9d9d9;
@@ -70,15 +71,18 @@ a {
 
 /* Buttons */
 .btn {
-  padding: 0.7rem 2.5rem;
+  padding: 0.6rem 2.5rem;
   background: white;
-  border: 1.5px solid var(--borderColor);
+  border: 2px solid var(--borderColor);
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 5px;
 }
 
 /* Titles */
@@ -173,7 +177,7 @@ nav ul li a {
 /* Style the active class, and buttons on mouse-over */
 .active,
 .btns:hover {
-  color: var(--secondaryTextColor);
+  color: var(--thirdTextColor);
 }
 
 /* Burger */
@@ -213,7 +217,8 @@ nav ul li a {
 }
 
 .hero-right img {
-  width: 90%;
+  width: 60%;
+  border-radius: 50%;
 }
 
 .hero-right {

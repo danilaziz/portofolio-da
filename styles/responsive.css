@@ -80,7 +80,8 @@
   }
 
   .hero-right img {
-    width: 70%;
+    width: 50%;
+    margin-top: 5rem;
   }
 
   .hero-left {
@@ -89,7 +90,7 @@
   }
 
   .hero-left .pre-title {
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
   .hero-name {
