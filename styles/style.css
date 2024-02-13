@@ -70,7 +70,7 @@ a {
 
 /* Buttons */
 .btn {
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 2.5rem;
   background: white;
   border: 1.5px solid var(--borderColor);
   cursor: pointer;
@@ -118,15 +118,36 @@ a {
 
 /* Logo and Naviagtion Menu */
 .nav {
+  width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 15px 120px;
+  background: var(--primaryBackgroundColor);
+  position: fixed;
+  z-index: 100;
+  align-items: center;
+}
+
+.nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--secondaryTextColor);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.nav a:hover::after {
+  transform: scaleX(0.5);
 }
 
 .nav ul {
   list-style: none;
   display: flex;
   gap: 3rem;
+  font-weight: 500;
 }
 
 .logo {
@@ -147,6 +168,12 @@ nav ul li {
 
 nav ul li a {
   color: var(--primaryTextColor);
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.btns:hover {
+  color: var(--secondaryTextColor);
 }
 
 /* Burger */
