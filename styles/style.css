@@ -127,7 +127,8 @@ a {
   left: 0;
   display: flex;
   justify-content: space-between;
-  padding: 15px 120px;
+  padding: 5px 120px;
+  padding-top: 10px;
   background: var(--primaryBackgroundColor);
   position: fixed;
   z-index: 100;

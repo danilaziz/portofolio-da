@@ -20,26 +20,26 @@
   }
 
   .toggle-burger .line-1 {
-    transform: rotate(-45deg) translate(-5px, 7px);
+    transform: rotate(-45deg) translate(-6px, 7px);
   }
 
   .toggle-burger .line-2 {
     opacity: 0;
   }
   .toggle-burger .line-3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+    transform: rotate(45deg) translate(-6px, -7px);
   }
 
   /* Navigation */
   nav {
     position: fixed;
-    width: 50%;
+    width: 35%;
     right: 0;
     top: 0;
     height: 100vh;
     flex-direction: column;
-    background: var(--primaryBackgroundColor);
-    border-left: var(--borderColor);
+    background: #fbfbfb;
+    border-left: #f1f1f1;
     z-index: 9;
     transform: translateX(100%);
     transition: 0.3s ease-in-out;
