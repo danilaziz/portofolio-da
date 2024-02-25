@@ -71,18 +71,21 @@ a {
 
 /* Buttons */
 .btn {
-  padding: 0.6rem 2.5rem;
-  background: white;
-  border: 2px solid var(--borderColor);
+  padding: 0.5rem 2rem;
+  background: var(--primaryTextColor);
   cursor: pointer;
   transition: 0.2s ease-in-out;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  margin-left: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--borderColor);
+  line-height: 1.2rem;
 }
 
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 5px;
+  background: #183d3d;
 }
 
 /* Titles */
@@ -127,12 +130,13 @@ a {
   left: 0;
   display: flex;
   justify-content: space-between;
-  padding: 5px 120px;
-  padding-top: 10px;
+  padding: 10px 120px;
   background: var(--primaryBackgroundColor);
   position: fixed;
   z-index: 100;
   align-items: center;
+  opacity: 95%;
+  color: var(--primaryTextColor);
 }
 
 .nav a::after {
@@ -205,6 +209,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  text-align: justify;
 }
 
 .hero-name {
@@ -303,6 +308,10 @@ nav ul li a {
   font-size: 1.05rem;
 }
 
+.portfolio p {
+  text-align: justify;
+}
+
 .portfolio-title a svg:hover {
   fill: var(--primaryIconColor);
 }
@@ -371,15 +380,19 @@ nav ul li a {
   left: -6px;
 }
 
-.skills-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 1.5rem;
+.skills-right p {
+  text-align: justify;
 }
 
 .skills-right ul {
   line-height: 2rem;
   padding: 0 1rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
 }
 
 /* Contact Section */
