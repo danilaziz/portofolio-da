@@ -136,14 +136,13 @@ a {
   z-index: 100;
   align-items: center;
   opacity: 95%;
-  color: var(--primaryTextColor);
 }
 
 .nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--secondaryTextColor);
+  border-bottom: 0.1rem solid var(--thirdTextColor);
   transform: scaleX(0);
   transition: 0.2s linear;
 }
